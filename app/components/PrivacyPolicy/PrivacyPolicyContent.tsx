@@ -59,11 +59,11 @@ word-break: break-word !important;
 `;
 
 const PrivacyPolicyContent = () => {
-  const createMarkup = body => {
+  const createMarkup = (body: string): { __html: string } => {
     return { __html: body };
   };
 
-  const insertBody = (name, body) => {
+  const insertBody = (name: string, body: string) => {
     return (
       <React.Fragment>
         <h5>{name}: </h5>

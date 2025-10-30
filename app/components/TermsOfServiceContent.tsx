@@ -206,11 +206,11 @@ Calibri;color:#595959;mso-themecolor:text1;mso-themetint:166;"><bdt class="block
 `;
 
 const TermsOfServiceContent = () => {
-  const createMarkup = body => {
+  const createMarkup = (body: string): { __html: string } => {
     return { __html: body };
   };
 
-  const insertBody = (name, body) => {
+  const insertBody = (name: string, body: string) => {
     return (
       <React.Fragment>
         {/* <Typography */}
